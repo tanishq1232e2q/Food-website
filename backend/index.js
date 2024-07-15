@@ -17,7 +17,7 @@ const middleware=require("./middleware/middleware")
 
 
 const corsoption = {
-  origin: "http://localhost:5173",
+  origin: "https://food-website-uu6o.onrender.com",
   methods: "GET, POST, PUT, DELETE",
   credentials: true
 }
