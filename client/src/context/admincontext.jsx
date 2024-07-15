@@ -43,7 +43,7 @@ export const AdminProvider = ({ children }) => {
     console.log(data);
     
     let tr=JSON.parse(localStorage.getItem("finaluser"))
-    console.log(tr.length);
+    
     let [count, setcount] = useState(logout?tr.length:"0")
     const uniqueval=[...new Set(data)]
     const [images, setImages] = useState(localStorage.getItem("img"))
