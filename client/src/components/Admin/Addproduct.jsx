@@ -32,7 +32,7 @@ export default function Addproduct() {
         e.preventDefault()
         const formdata = new FormData()
         formdata.append("image", image)
-        const result = await fetch("http://localhost:8000/upload-image", {
+        const result = await fetch("https://food-website-backend-10zz.onrender.com/upload-image", {
             method: "POST",
             body: formdata,
 
@@ -57,7 +57,7 @@ export default function Addproduct() {
             console.log(product);
             e.preventDefault()
 
-            const response = await fetch("http://localhost:8000/admin/addproducts", {
+            const response = await fetch("https://food-website-backend-10zz.onrender.com/admin/addproducts", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
