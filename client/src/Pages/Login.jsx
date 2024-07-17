@@ -28,7 +28,7 @@ export default function Login(props) {
     const loginsubmit = async (e) => {
         e.preventDefault()
 
-        const response = await fetch("https://food-website-backend-10zz.onrender.com/user/loginuser", {
+        const response = await fetch("https://food-website-backend-3ij1.onrender.com/user/loginuser", {
             method: "POST",
             headers: {
                 "Content-Type": "Application/json"
