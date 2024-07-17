@@ -26,7 +26,7 @@ export default function Aminusers() {
 
 
             // e.preventDefault()
-            const response = await fetch(`https://food-website-backend-10zz.onrender.com/admin/users`, {
+            const response = await fetch(`https://food-website-backend-3ij1.onrender.com/admin/users`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -56,7 +56,7 @@ export default function Aminusers() {
 
 
             // e.preventDefault()
-            const response = await fetch(`https://food-website-backend-10zz.onrender.com/admin/delusers/${id}`, {
+            const response = await fetch(`https://food-website-backend-3ij1.onrender.com/admin/delusers/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
@@ -116,7 +116,7 @@ export default function Aminusers() {
 
 
             // e.preventDefault()
-            const response = await fetch(`https://food-website-backend-10zz.onrender.com/admin/upusers/${yesid}`, {
+            const response = await fetch(`https://food-website-backend-3ij1.onrender.com/admin/upusers/${yesid}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
