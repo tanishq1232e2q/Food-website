@@ -22,7 +22,7 @@ export default function Admincontacts() {
 
 
             // e.preventDefault()
-            const response = await fetch(`https://food-website-backend-10zz.onrender.com/admin/getcontacts`, {
+            const response = await fetch(`https://food-website-backend-3ij1.onrender.com/admin/getcontacts`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
