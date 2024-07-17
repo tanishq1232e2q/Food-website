@@ -37,7 +37,7 @@ export default function Signup(props) {
         e.preventDefault()
 
 
-        const response = await fetch("https://food-website-backend-10zz.onrender.com/user/adduser", {
+        const response = await fetch("https://food-website-backend-3ij1.onrender.com/user/adduser", {
             method: "POST",
             headers: {
                 "Content-Type": "Application/json"
