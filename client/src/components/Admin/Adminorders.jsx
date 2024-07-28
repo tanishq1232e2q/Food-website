@@ -44,7 +44,7 @@ export default function Adminorders() {
                                     <p><span>Category:  </span>{elem.category}</p>
                                     <p><span>Price:  </span>{elem.price}</p>
                                     <p><span>Quantity:  </span>{elem.getdata}</p>
-                                    <p><span>Ordered by:  </span>{elem.username}</p>
+                                    <p><span>Ordered by:  </span>{elem.userauth}</p>
                                 </section>
                             </div>
 
