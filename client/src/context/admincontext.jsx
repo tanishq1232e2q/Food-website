@@ -103,7 +103,7 @@ export const AdminProvider = ({ children }) => {
             })
             const data=await response.json()
             
-            console.log(data);f
+            console.log(data)
             setuserauth(data.name)
             setuseradmin(data.Isadmin)
             setuserid(data._id)
