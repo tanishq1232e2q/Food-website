@@ -173,7 +173,7 @@ export default function Menustyle(props) {
         console.log(getdata);
         console.log(imgdata);
 
-        setdata([...data, { ...proddata, image: imgdata, getdata: getdata, userId: userId,username:userauth }])
+        setdata([...data, { ...proddata, image: imgdata, getdata: getdata, userId: userId,userauth:username }])
         const unique = [...new Set(data)]
         console.log(unique);
         console.log(data);
