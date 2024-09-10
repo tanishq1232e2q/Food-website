@@ -29,7 +29,7 @@ export default function Menustyle(props) {
         if (allimage) {
             const loadedImages = allimage.map(async data => {
 
-                const module = await import(`../images/${data.image}`);
+                const module = await import('/images/${data.image}');
 
 
                 return module.default;
