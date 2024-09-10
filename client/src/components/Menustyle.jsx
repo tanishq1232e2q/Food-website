@@ -29,7 +29,7 @@ export default function Menustyle(props) {
         if (allimage) {
             const loadedImages = allimage.map(async data => {
 
-                const module = await import('/images/${data.image}');
+                const module = await import('https://food-website-backend-3ij1.onrender.com/images/${data.image}');
 
 
                 return module.default;
