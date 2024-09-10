@@ -50,7 +50,7 @@ export default function Menustyle(props) {
 
 useEffect(() => {
   if (allimage) {
-    const loadedImages = allimage.map(data => images(`./${data.image}`).default);
+    const loadedImages = allimage.map(data => images(`../${data.image}`).default);
     setImages(loadedImages);
   }
 }, [allimage]);
