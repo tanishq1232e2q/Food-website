@@ -14,7 +14,7 @@ export default function Menustyle(props) {
 
     let { allimage, getimg, product, setproduct, count, setcount, setdata, data, cartimg, setcartimg, userid, authuser,logout,userauth } = useadmin()
 
-    const [images, setImages] = useState([])
+    // const [images, setImages] = useState([])
     const [quant, setquant] = useState(1)
     // let [count, setcount] = useState(0)
     const [clicked, setClicked] = useState(false)
@@ -25,24 +25,35 @@ export default function Menustyle(props) {
 
 
     const [pricerange, setpricerange] = useState()
-    useEffect(() => {
-        if (allimage) {
-            const loadedImages = allimage.map(async data => {
+    // useEffect(() => {
+    //     if (allimage) {
+    //         const loadedImages = allimage.map(async data => {
 
-                const module = await import('https://food-website-backend-3ij1.onrender.com/images/${data.image}');
-
-
-                return module.default;
-
-            });
-            Promise.all(loadedImages).then(images => setImages(images));
+    //             const module = await import('https://food-website-backend-3ij1.onrender.com/images/${data.image}');
+                
 
 
-        }
+    //             return module.default;
+
+    //         });
+    //         Promise.all(loadedImages).then(images => setImages(images));
+
+
+    //     }
 
 
 
-    }, [allimage]);
+    // }, [allimage]);
+
+
+    const images = require.context('../images', false, /\.(png|jpe?g|svg)$/);
+
+useEffect(() => {
+  if (allimage) {
+    const loadedImages = allimage.map(data => images(`./${data.image}`).default);
+    setImages(loadedImages);
+  }
+}, [allimage]);
 
 
 
