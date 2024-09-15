@@ -25,35 +25,28 @@ export default function Menustyle(props) {
 
 
     const [pricerange, setpricerange] = useState()
-    // useEffect(() => {
-    //     if (allimage) {
-    //         const loadedImages = allimage.map(async data => {
+    useEffect(() => {
+        if (allimage) {
+            const loadedImages = allimage.map(async data => {
 
-    //             const module = await import('https://food-website-backend-3ij1.onrender.com/images/${data.image}');
+                const module = await import('https://food-website-backend-3ij1.onrender.com/images/${data.image}');
                 
 
 
-    //             return module.default;
+                return module.default;
 
-    //         });
-    //         Promise.all(loadedImages).then(images => setImages(images));
-
-
-    //     }
+            });
+            Promise.all(loadedImages).then(images => setImages(images));
 
 
+        }
 
-    // }, [allimage]);
 
 
-    const images = require.context('../images', false, /\.(png|jpe?g|svg)$/);
+    }, [allimage]);
 
-useEffect(() => {
-  if (allimage) {
-    const loadedImages = allimage.map(data => images(`../${data.image}`).default);
-    setImages(loadedImages);
-  }
-}, [allimage]);
+
+   
 
 
 
