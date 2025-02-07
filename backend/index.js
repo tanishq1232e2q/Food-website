@@ -21,7 +21,7 @@ const fs = require("fs");
 const path = require("path");
 
 const corsoption = {
-  origin: "http://localhost:5173",
+  origin: "https://food-website-client.onrender.com",
   methods: "GET, POST, PUT, DELETE",
   credentials: true
 }
