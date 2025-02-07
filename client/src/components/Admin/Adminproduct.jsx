@@ -72,7 +72,7 @@ export default function Adminproduct() {
             console.log(product);
             // e.preventDefault()
 
-            const response = await fetch(`http://localhost:8000/admin/updateproducts/${prod}`, {
+            const response = await fetch(`https://food-website-backend-jwf8.onrender.com/admin/updateproducts/${prod}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
@@ -123,7 +123,7 @@ export default function Adminproduct() {
             console.log(product);
 
             // e.preventDefault()
-            const response = await fetch(`http://localhost:8000/delete-image/${allimage[index]._id}`, {
+            const response = await fetch(`https://food-website-backend-jwf8.onrender.com/delete-image/${allimage[index]._id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
@@ -155,7 +155,7 @@ export default function Adminproduct() {
         try {
 
 
-            const response = await fetch(`http://localhost:8000/admin/deleteproducts/${id}`, {
+            const response = await fetch(`https://food-website-backend-jwf8.onrender.com/admin/deleteproducts/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
