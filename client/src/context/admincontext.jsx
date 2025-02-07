@@ -70,7 +70,7 @@ export const AdminProvider = ({ children }) => {
     console.log(images);
     localStorage.setItem("img",images)
     const getproducts = async () => {
-        const response = await fetch("http://localhost:8000/admin/getproducts", {
+        const response = await fetch("https://food-website-backend-jwf8.onrender.com/admin/getproducts", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -97,7 +97,7 @@ export const AdminProvider = ({ children }) => {
 
     const authuser=async()=>{
         try {
-            const response=await fetch("http://localhost:8000/user/getuser",{
+            const response=await fetch("https://food-website-backend-jwf8.onrender.com/user/getuser",{
                 method:"GET",
                 headers:{
                     auth:authtoken
@@ -125,7 +125,7 @@ export const AdminProvider = ({ children }) => {
 
         try {
 
-            const result = await fetch("http://localhost:8000/get-image", {
+            const result = await fetch("https://food-website-backend-jwf8.onrender.com/get-image", {
                 method: "GET"
             })
             const fi = await result.json()
@@ -141,7 +141,7 @@ export const AdminProvider = ({ children }) => {
 
         try {
 
-            const result = await fetch("http://localhost:8000/get-userimg", {
+            const result = await fetch("https://food-website-backend-jwf8.onrender.com/get-userimg", {
                 method: "GET"
             })
             const fall = await result.json()
