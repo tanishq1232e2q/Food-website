@@ -1,4 +1,4 @@
-This is the Full Stack Restaurant Management Website Tech Stack- MERN Frontend- Reactjs, Bootstrap Backend- Nodejs, Multer(Image uploading) Database- MongoDB
+This is the Full Stack Restaurant Management Website Tech Stack- MERN Frontend- Reactjs, Bootstrap Backend- Nodejs, Multer, Cloudinary Database- MongoDB
 
 * It consists of Selecting the food products of your choice from various categories.
   
