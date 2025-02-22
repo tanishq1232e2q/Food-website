@@ -6,7 +6,7 @@ This is the Full Stack Restaurant Management Website Tech Stack- MERN Frontend- 
   
 * User can select any of the products that he want.
 
-* Admin panel functionality is also available where the admins can add, delele or upadte the products
+* Admin panel functionality is also available where the admins can add, delete or update the products
   .
 * User can be Admin or a normal user, only admin can control the products.
   
