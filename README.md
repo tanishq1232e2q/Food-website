@@ -1,15 +1,50 @@
-## Full Stack Restaurant Management Website
+# Food-website
 
-This is the Full Stack Restaurant Management Website Tech Stack- MERN Frontend- Reactjs, Bootstrap Backend- Nodejs, Multer, Cloudinary Database- MongoDB
+A full-stack restaurant management website built with the MERN stack. The application provides a polished food browsing experience for customers and a powerful admin panel for managing products and users.
 
-* It consists of Selecting the food products of your choice from various categories.
-  
-* It has several Filter features such as price range, categories etc.
-  
-* User can select any of the products that he want.
+## Live Demo
 
-* Admin panel functionality is also available where the admins can add, delete or update the products
-  .
-* User can be Admin or a normal user, only admin can control the products.
-  
-* Admin can control the users and make them admin
+**Frontend:** https://food-website-client.onrender.com/
+
+## Overview
+
+Food-website is a restaurant management platform that lets users explore food items across multiple categories, apply filters, and place selections easily. The admin dashboard supports product and user management, making it suitable for end-to-end restaurant operations.
+
+## Features
+
+### Customer Features
+- Browse food items across different categories
+- Filter products by category and price range
+- Select products of interest
+- Enjoy a responsive user experience
+
+### Admin Features
+- Add new products
+- Update existing products
+- Delete products
+- Manage users and promote users to admin
+
+## Tech Stack
+
+- **Frontend:** React.js, Bootstrap, JavaScript
+- **Backend:** Node.js, Express.js, Multer, Cloudinary
+- **Database:** MongoDB
+- **Architecture:** MERN Stack
+
+## Project Structure
+
+This repository contains both the client and server parts of the application.
+
+## Getting Started
+
+### Prerequisites
+- Node.js
+- npm or yarn
+- MongoDB database
+- Cloudinary account for image uploads
+
+### Installation
+
+```bash
+git clone https://github.com/tanishq1232e2q/Food-website.git
+cd Food-website
